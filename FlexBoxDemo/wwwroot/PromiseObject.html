@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        const pObjt1 = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                let rollNo = [1, 2, 3, 4, 5];
+                resolve(rollNo);
+                reject('Error while communication');
+            },2000);
+        });
+
+        const getBioData = (indexData) => {
+            return new Promise((resolve, reject) => {
+                setTimeout((indexData) => {
+                    let boiData =
+                    {
+                        name: "Ajay",
+                        age:26
+                    }
+                    resolve(`Mt RollNo is ${indexData}. My Name is
+${bioData.name} and I am ${bioData.age}`);
+
+                }, 2000, indexData)
+            });
+        }
+        //promise consume
+
+        pObjt1.then((rollno) => {
+            console.log(rollno);
+            getBioData(rollno[0]).then(aaa)=>
+            {
+            };
+
+        }).catch((error) => {
+            console.log(error);
+        });
+         
+
+       
+         
+
+    </script>
+</head>
+<body>
+    Working with Variables
+</body>
+</html>

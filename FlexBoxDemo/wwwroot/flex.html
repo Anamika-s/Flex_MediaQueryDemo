@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <style>
+       .contanier {
+           height: 544px;
+           width: 80%;
+           border: 2px solid black;
+           display: flex;
+          /* flex-direction: column;*/
+          /* flex-wrap: wrap;*/
+           /* flex-direction: row;*/
+           flex-flow: row;
+           justify-content: space-around;
+       }
+       .item {
+           height: 100px;
+           width: 80px;
+           background-color: tomato;
+           border: 2px solid green;
+           margin: 10px;
+           padding: 10px;
+       }
+       #item-1 {
+           /* Flex properties for a flex item */
+           /* Higher the order, later it shows up in the container */
+             order: 102; 
+            flex-grow: 2;
+           /* flex-shrink: 2; */
+       }
+       #item-2 {
+           /* Flex properties for a flex item */
+           /* Higher the order, later it shows up in the container */
+           order: 10;
+           /* flex-grow: 2;
+            flex-shrink: 2; */
+       }
+       #item-3 {
+           /* Flex properties for a flex item */
+           /* Higher the order, later it shows up in the container */
+           order: 12;
+           /* flex-grow: 2;
+            flex-shrink: 2; */
+       }
+       #item-4 {
+           /* Flex properties for a flex item */
+           /* Higher the order, later it shows up in the container */
+           order: 20;
+           /* flex-grow: 2;
+            flex-shrink: 2; */
+       }
+
+
+   </style>
+
+    <meta charset="utf-8" />
+    <title>FlexBox Demo</title>
+</head>
+<body>
+    <h1> Flex Demo </h1>
+
+    <div class="contanier">
+        <div class="item" id="item-1"> First Box</div>
+        <div class="item" id="item-2"> Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <div class="item" id="item-4">Fourth Box</div>
+        <!--<div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box--> 
+           </div>
+</body>
+</html>
