@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function DisplayHello() {
+            alert("This is a message from head section");
+        }
+        function AddNumbers() {
+          var num1 =  parseInt(document.getElementById("txtNo1").value);
+            var num2 =parseInt(document.getElementById("txtNo2").value);
+            document.getElementById("txtResult").value =
+                num1 + num2;
+            
+        }
+        function SubtractNumbers() {
+            var num1 = parseInt(document.getElementById("txtNo1").value);
+            var num2 = parseInt(document.getElementById("txtNo2").value);
+            document.getElementById("txtResult").value =
+                num1 - num2;
+
+        }
+        //function one() {
+        //    {
+        //        const x = 10;
+        //        console.log(x);
+            
+        //    x = 100;
+        //    console.log(x);
+        //}
+        function ConvertToUpper() {
+            alert(txtName.value.toUpperCase());
+        }
+
+    </script> 
+</head>
+<body>
+    <form>
+        <label for="txtNo1"> Enter No 1</label>
+        <input type="number" id="txtNo1" />
+        <br />
+        <label for="txtNo2"> Enter No 2</label>
+        <input type="number" id="txtNo2" />
+        <br />
+        <label for="txtResult"> Result </label>
+        <input type="number" id="txtResult" />
+        <br />
+        <input type="button" value="Add" onclick="AddNumbers();" />
+        <input type="button" value="Subtract" onclick="SubtractNumbers();" />
+
+        <input type="button" value="Multiply" onclick="MultiplyNumbers();" />
+
+        <input type="button" value="Divide" onclick="DivideNumbers();" />
+        <label for="txtName"> Enter Name </label>
+        <input type="text" id="txtName" />
+        <input type="button" value="Convert to Upper Case" onclick="ConvertToUpper();" />
+
+    </form>
+</body>
+</html>
